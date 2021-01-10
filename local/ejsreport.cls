@@ -6,6 +6,8 @@
 
 \LoadClass[11pt,BCOR=0mm]{scrreport}
 
+\DeclareRobustCommand{\chapterauthor}[1]{\normalfont\small\itshape \\#1}
+
 \RequirePackage[onehalfspacing]{setspace}
 \RequirePackage[ngerman]{babel}
 \RequirePackage[babel,german=quotes]{csquotes}
@@ -17,9 +19,11 @@
   top=20mm,
   footskip=8mm
 }
-\RequirePackage[scaled]{helvet}
+\RequirePackage{helvet}
 \renewcommand\familydefault{\sfdefault}
 \RequirePackage[
+  isbn=false,
+  ibidpage=true,
   backend=biber,
   style=verbose-inote,
   minnames=2, 
